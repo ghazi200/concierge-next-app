@@ -1,0 +1,17 @@
+service: concierge-staffing-app
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev # Add a stage (e.g., dev, prod)
+
+plugins:
+  - serverless-offline
+
+functions:
+  app:
+    handler: server.handler
+    events:
+      - http:
+          path: /shifts # Add leading slash
+          method: get

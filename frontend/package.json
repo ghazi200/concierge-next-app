@@ -1,0 +1,24 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "Concierge Staffing App Frontend",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start"
+    },
+    "dependencies": {
+      "next": "^14.0.2",
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    },
+    "resolutions": {
+  "react": "^19.0.0",
+  "react-dom": "^19.0.0"
+},
+"overrides": {
+  "react": "^19.0.0",
+  "react-dom": "^19.0.0"
+}
+  }
+  
