@@ -1,4 +1,4 @@
-import analytics from '@react-native-firebase/analytics';
+//import analytics from '@react-native-firebase/analytics';
 
 const logScreenView = async (screenName) => {
   await analytics().logScreenView({
