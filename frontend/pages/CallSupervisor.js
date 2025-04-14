@@ -1,25 +1,9 @@
-import React from "react";
-
-const CallSupervisorScreen = () => {
-  const callSupervisor = async () => {
-    await axios.post("https://yourbackend.com/call-supervisor", {
-      employeePhone: "+1234567890",
-      supervisorPhone: "+0987654321",
-    });
-    alert("Calling Supervisor...");
-  };
-
+// pages/call-supervisor.js
+export default function CallSupervisor() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Need Help?</Text>
-      <Button title="Call Supervisor" onPress={callSupervisor} />
-    </View>
+    <div style={{ padding: "20px" }}>
+      <h2>Call Supervisor Screen</h2>
+      <p>This is where users can reach out to a supervisor.</p>
+    </div>
   );
-};
-
-const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "center", alignItems: "center" },
-  title: { fontSize: 20, fontWeight: "bold", marginBottom: 10 },
-});
-
-export default CallSupervisorScreen;
+}
