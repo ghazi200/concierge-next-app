@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, TextInput, Button, Text, StyleSheet } from "react-native";
+import React from "react";
+
 import axios from "axios";
 
 const ChatbotScreen = () => {
