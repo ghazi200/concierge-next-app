@@ -1,0 +1,7 @@
+*.png filter=lfs diff=lfs merge=lfs -text
+# .gitignore
+
+node_modules/
+.next/
+.env.local
+.DS_Store
