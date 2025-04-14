@@ -1,22 +1,10 @@
-import React from "react";
+// pages/schedule-view.js
 
-const ScheduleView = () => {
+export default function ScheduleView() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Your Schedule</Text>
-      <Calendar
-        markedDates={{
-          "2025-03-01": { selected: true, marked: true, selectedColor: "blue" },
-          "2025-03-05": { marked: true },
-        }}
-      />
-    </View>
+    <div style={{ padding: 20 }}>
+      <h2>Schedule View</h2>
+      <p>This screen will show the user's upcoming shifts.</p>
+    </div>
   );
-};
-
-const styles = StyleSheet.create({
-  container: { flex: 1, padding: 10 },
-  title: { fontSize: 20, fontWeight: "bold", marginBottom: 10 },
-});
-
-export default ScheduleView;
+}
