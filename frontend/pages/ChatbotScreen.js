@@ -1,30 +1,10 @@
-import React, { useState } from "react";
-import React from "react";
+// pages/chatbot.js
 
-
-const ChatbotScreen = () => {
-  const [message, setMessage] = useState("");
-  const [response, setResponse] = useState("");
-
-  const sendMessage = async () => {
-    const res = await axios.post("https://yourbackend.com/chatbot", { message });
-    setResponse(res.data.reply);
-  };
-
+export default function Chatbot() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>AI Chatbot</Text>
-      <TextInput style={styles.input} placeholder="Ask about shifts..." onChangeText={setMessage} />
-      <Button title="Send" onPress={sendMessage} />
-      <Text>{response}</Text>
-    </View>
+    <div style={{ padding: 20 }}>
+      <h2>Chatbot Screen</h2>
+      <p>This is where your chatbot UI will go.</p>
+    </div>
   );
-};
-
-const styles = StyleSheet.create({
-  container: { flex: 1, padding: 10 },
-  title: { fontSize: 20, fontWeight: "bold", marginBottom: 10 },
-  input: { borderWidth: 1, padding: 10, marginBottom: 10 },
-});
-
-export default ChatbotScreen;
+}
